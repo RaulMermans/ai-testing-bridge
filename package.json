@@ -1,0 +1,33 @@
+{
+  "name": "ai-testing-bridge",
+  "version": "1.0.0",
+  "description": "MCP server for health checks and visual verification of Railway deployments using Playwright",
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "node --watch dist/index.js",
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "security:audit": "pnpm audit",
+    "security:check": "pnpm audit --audit-level=moderate"
+  },
+  "keywords": [
+    "mcp",
+    "playwright",
+    "testing",
+    "health-check",
+    "railway"
+  ],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.28.0",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.25.2",
+    "playwright": "^1.57.0",
+    "zod": "^4.3.5"
+  },
+  "devDependencies": {
+    "@types/node": "^25.0.9",
+    "typescript": "^5.9.3"
+  }
+}

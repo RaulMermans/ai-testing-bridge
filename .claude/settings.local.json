@@ -1,7 +1,11 @@
 {
   "permissions": {
     "allow": [
-      "Bash(git init:*)"
+      "Bash(git init:*)",
+      "Bash(pnpm add:*)",
+      "Bash(npx playwright:*)",
+      "Bash(pnpm build:*)",
+      "Bash(pnpm audit:*)"
     ]
   }
 }
